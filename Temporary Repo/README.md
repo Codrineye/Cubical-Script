@@ -25,7 +25,7 @@ All entries are converted into the .docx [Ghidra](docx/Ghidra%20Project.docx), c
 
 The reverse engineering field of disassemblers is, by its nature, an ever changing and evolving one. There is an ever-present need for state of the art programs that can guarantee efficient translation of machine code into assembly.
 
-Having access to a large variety of processors and file formats is essential. At the moment, IDA Pro offers the most vast range(2,4), including support for certain exotic architectures like RISC-V and SPARC(7). Taking that into consideration, Ghidra comes close behind with support for most file formats(1,5,7), including modern ones, and for most processors including their variants, while allowing for the addition of new architectures or extending pre existing ones(1,4).<br>
+Having access to a large variety of processors and file formats is essential. At the moment, IDA Pro offers the most vast range[$^{\text{2,4}}$](#chapter-5-bibliography), including support for certain exotic architectures like RISC-V and SPARC(7). Taking that into consideration, Ghidra comes close behind with support for most file formats(1,5,7), including modern ones, and for most processors including their variants, while allowing for the addition of new architectures or extending pre existing ones(1,4).<br>
 Processors such as(1):
 * Z80
 * X86 16/32/64
@@ -164,17 +164,17 @@ This example is to show an overview of ghidra's code browser, tho this explanati
 
 ## Chapter-5 Bibliography
 
-* 1: https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions 
-* 2: https://hex-rays.com/ida-pro
-* 3: https://letsdefend.io/blog/top-7-reverse-engineering-tools?utm_source=perplexity
-* 4: https://hackmag.com/security/nsa-ghidra/
-* 5: https://www.apriorit.com/dev-blog/366-software-reverse-engineering-tools
-* 6: https://www.retroreversing.com/disassemblers
-* 7: https://medium.com/@Progsky/ghidra-vs-ida-pro-a-comparison-of-two-popular-reverse-engineering-tools-55223fad9193
-* 8: https://startup-house.com/glossary/disassembler
-* 9: https://cybersecuritynews.com/ida-9-0-released/
-* 10: https://www.linkedin.com/advice/3/what-advantages-disadvantages-using-ghidra
-* 11: https://www.deepbits.com/deepdi
-* 12: https://github.com/DeepBitsTechnology/DeepDi
-* 13: https://www.cs.ucr.edu/~heng/pubs/DeepDi.pdf
-* 14: https://blog.deepbitstech.com/2020/06/deepdisassembly-blazing-fast-and.html
+1. https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions 
+1. https://hex-rays.com/ida-pro
+1. https://letsdefend.io/blog/top-7-reverse-engineering-tools?utm_source=perplexity
+1. https://hackmag.com/security/nsa-ghidra/
+1. https://www.apriorit.com/dev-blog/366-software-reverse-engineering-tools
+1. https://www.retroreversing.com/disassemblers
+1. https://medium.com/@Progsky/ghidra-vs-ida-pro-a-comparison-of-two-popular-reverse-engineering-tools-55223fad9193
+1. https://startup-house.com/glossary/disassembler
+1. https://cybersecuritynews.com/ida-9-0-released/
+1. https://www.linkedin.com/advice/3/what-advantages-disadvantages-using-ghidra
+1. https://www.deepbits.com/deepdi
+1. https://github.com/DeepBitsTechnology/DeepDi
+1. https://www.cs.ucr.edu/~heng/pubs/DeepDi.pdf
+1. https://blog.deepbitstech.com/2020/06/deepdisassembly-blazing-fast-and.html
