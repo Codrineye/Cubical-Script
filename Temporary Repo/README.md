@@ -25,8 +25,8 @@ All entries are converted into the .docx [Ghidra](docx/Ghidra%20Project.docx), c
 
 The reverse engineering field of disassemblers is, by its nature, an ever changing and evolving one. There is an ever-present need for state of the art programs that can guarantee efficient translation of machine code into assembly.
 
-Having access to a large variety of processors and file formats is essential. At the moment, IDA Pro offers the most vast range, including support for certain exotic architectures like RISC-V and SPARC. Taking that into consideration, Ghidra comes close behind with support for most file formats, including modern ones, and for most processors including their variants, while allowing for the addition of new architectures or extending pre existing ones.<br>
-Processors such as:
+Having access to a large variety of processors and file formats is essential. At the moment, IDA Pro offers the most vast range(2,4), including support for certain exotic architectures like RISC-V and SPARC(7). Taking that into consideration, Ghidra comes close behind with support for most file formats(1,5,7), including modern ones, and for most processors including their variants, while allowing for the addition of new architectures or extending pre existing ones(1,4).<br>
+Processors such as(1):
 * Z80
 * X86 16/32/64
 * 6502
@@ -44,23 +44,23 @@ Processors such as:
 * Sparc 32/64
 * CR16C
 
-In terms of decompilers, IDA Pro’s "Hex-Rays" is best thanks to its accuracy being comparable to that of a human. The technological advancements implemented through IDA 9.0 also introduced new decompilers for 32- and 64-bit RISC-V code, designed to modernise processes and increase capacities. Ghidra’s decompiler is powerful, but not as refined as Hex-Rays.<br>
-Furthermore, IDA Pro provides superior debugging and emulation for running and tracing target systems, particularly for Android and Windows.<br>
-Currently IDA Pro delivers greater support for patching binaries, interactively changing characteristics of displayed data, renaming variables, functions, structures or changing data presentation and creating custom types.
+In terms of decompilers, IDA Pro’s "Hex-Rays" is best thanks to its accuracy being comparable to that of a human(3,5). The technological advancements implemented through IDA 9.0 also introduced new decompilers for 32- and 64-bit RISC-V code(9), designed to modernise processes and increase capacities. Ghidra’s decompiler is powerful, but not as refined as Hex-Rays(3).<br>
+Furthermore, IDA Pro provides superior debugging and emulation for running and tracing target systems, particularly for Android and Windows(7).<br>
+Currently IDA Pro delivers greater support for patching binaries, interactively changing characteristics of displayed data, renaming variables, functions, structures or changing data presentation and creating custom types(5,7).
 
-Regarding graph generation, Ghidra offers a more informative, highly customizable and detailed visualisation of code, even marking “if … else” statements on the graph and making it more organised.<br>
-For working teams, facilitating collaborative reverse engineering is important. Ghidra’s design supports working on the same project, while IDA Pro requires certain plugins and the database files are not designed to be shared.
+Regarding graph generation, Ghidra offers a more informative, highly customizable and detailed visualisation of code, even marking “if … else” statements on the graph and making it more organised(4).<br>
+For working teams, facilitating collaborative reverse engineering is important. Ghidra’s design supports working on the same project(3,7,10), while IDA Pro requires certain plugins and the database files are not designed to be shared(7).
 
-The support for cross-platform, while versatile, is implemented by few tools, like Ghidra, Rafare2 and JaDx, so that they work on macOS, Windows and Linux.
+The support for cross-platform, while versatile, is implemented by few tools, like Ghidra, Rafare2 and JaDx, so that they work on macOS, Windows and Linux(3).
 
-Concerning binaries, Ghidra is faster and loads multiple binaries into projects simultaneously, resulting in an easier approach to following code between applications and libraries, by using multi-threading and multi-core properties of the CPU. For bigger files, 150 MB+, IDA Pro has a better optimization of the memory and CPU usage, it can lessen the processing time, being altogether faster than the other.
+Concerning binaries, Ghidra is faster and loads multiple binaries into projects simultaneously, resulting in an easier approach to following code between applications and libraries, by using multi-threading and multi-core properties of the CPU(7). For bigger files, 150 MB+, IDA Pro has a better optimization of the memory and CPU usage, it can lessen the processing time, being altogether faster than the other(4,7).
 
-The most significant cutting-age technology implemented recently is helping with pattern recognition accuracy and processing very large files due to integration of AI and machine learning in disassemblers. Models are being trained to increase code recognition patterns and data structures.
-A disassembler based on deep learning, DeepDi, proved to be simultaneously fast, highly accurate and efficient against obfuscated binaries, managing to discern valid instructions from the raw binary. For capturing and propagating instruction relations, it uses a neural network graphing model. It has a very low false positive rate and false negative rate when identifying instructions, 0.02%/0.02%, and compared to IDA Pro, the CPU version is twice as fast and the GPU version is 350 times faster. Taking in consideration code section size-disassembly time correlations, the CPU version has a throughput of 146 KB/s and the GPU one is 170 times faster at around 24.5 MB/s.
+The most significant cutting-age technology implemented recently is helping with pattern recognition accuracy and processing very large files due to integration of AI and machine learning in disassemblers. Models are being trained to increase code recognition patterns and data structures(6).
+A disassembler based on deep learning, DeepDi, proved to be simultaneously fast, highly accurate and efficient against obfuscated binaries, managing to discern valid instructions from the raw binary(13,14). For capturing and propagating instruction relations, it uses a neural network graphing model(13). It has a very low false positive rate and false negative rate when identifying instructions, 0.02%/0.02%(11,13), and compared to IDA Pro, the CPU version is twice as fast and the GPU version is 350 times faster(11,12,13). Taking in consideration code section size-disassembly time correlations, the CPU version has a throughput of 146 KB/s and the GPU one is 170 times faster at around 24.5 MB/s(13).
 
 ### Conclusion
 
-At the moment, state-of-the-art disassemblers are extraordinary, powerful tools used in domains such as reverse engineering, software development and debugging, but still suffer from challenges like the ambiguity of instructions, the absence of symbols and debugging information and mostly from the presence of obfuscation techniques, but these difficulties will begin to become a problem of the past with the evolution of machine learning.
+At the moment, state-of-the-art disassemblers are extraordinary, powerful tools used in domains such as reverse engineering, software development and debugging(8), but still suffer from challenges like the ambiguity of instructions, the absence of symbols and debugging information and mostly from the presence of obfuscation techniques(6), but these difficulties will begin to become a problem of the past with the evolution of machine learning.
 
 ## Chapter-2 Task-B
 
@@ -103,7 +103,7 @@ To begin, we will open up ghidra, and create a new project titled `Ghidra Exampl
 
 ![Create New Project](Images/Create%20New%20Project.png)
 
-Inside of our new workspace, we can open the CodeBrowser tool
+Inside of our new workspace, we can open the CodeBrowser tool.
 
 ![Start By Opening CodeBrowser](Images/Start%20By%20Opening%20CodeBrowser.png)
 
@@ -113,7 +113,7 @@ This is done by moving to File,
 ![Import File To Decompile](Images/Import%20File%20To%20Decompile.png)
 
 And selecting the file to import.<br>
-To initiate a disassembly, you must first specify the language of the file,
+To initiate a disassembly, you must first specify the language of the file.
 
 ![Select File Language](Images/Sellect%20File%20Language.png)
 
@@ -149,32 +149,32 @@ Since I have selected the entry, this single box represents the actions performe
 ![Show Function Graph at Entry](Images/Show%20Function%20Graph%20at%20Entry.png)
 
 As you can see, this entry calls for a function.<br>
-Clicking on this, we're taken to the contents of this secondary function
+Clicking on this, we're taken to the contents of this secondary function.
 
 ![Show Function Graph at Function Call](Images/Show%20Function%20Graph%20at%20Function%20Call.png)
 
 The lines going out represent subfunctions, such as if, and the pointer returns to the main function once finished.<br>
-By hovering over a field, you will see the direction in which these sub functions are performed and by hovering over a line you will see the section being hovered on
+By hovering over a field, you will see the direction in which these sub functions are performed and by hovering over a line you will see the section being hovered on.
 
 ![Show Function Graph Action By Hovering Over](Images/Show%20Function%20Graph%20Action%20By%20Hovering%20Over.png)
 
 ### Conclusion
 
-This example is to show an overview of ghidra's code browser, tho this explanation was short, it showcases how powerful this tool is and how versatile it can prove to be
+This example is to show an overview of ghidra's code browser, tho this explanation was short, it showcases how powerful this tool is and how versatile it can prove to be.
 
 ## Chapter-5 Bibliography
 
-* https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions
-* https://hex-rays.com/ida-pro
-* https://letsdefend.io/blog/top-7-reverse-engineering-tools?utm_source=perplexity
-* https://hackmag.com/security/nsa-ghidra/
-* https://www.apriorit.com/dev-blog/366-software-reverse-engineering-tools
-* https://www.retroreversing.com/disassemblers
-* https://medium.com/@Progsky/ghidra-vs-ida-pro-a-comparison-of-two-popular-reverse-engineering-tools-55223fad9193
-* https://startup-house.com/glossary/disassembler
-* https://cybersecuritynews.com/ida-9-0-released/
-* https://www.linkedin.com/advice/3/what-advantages-disadvantages-using-ghidra
-* https://www.deepbits.com/deepdi
-* https://github.com/DeepBitsTechnology/DeepDi
-* https://www.cs.ucr.edu/~heng/pubs/DeepDi.pdf
-* https://blog.deepbitstech.com/2020/06/deepdisassembly-blazing-fast-and.html
+* 1: https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions 
+* 2: https://hex-rays.com/ida-pro
+* 3: https://letsdefend.io/blog/top-7-reverse-engineering-tools?utm_source=perplexity
+* 4: https://hackmag.com/security/nsa-ghidra/
+* 5: https://www.apriorit.com/dev-blog/366-software-reverse-engineering-tools
+* 6: https://www.retroreversing.com/disassemblers
+* 7: https://medium.com/@Progsky/ghidra-vs-ida-pro-a-comparison-of-two-popular-reverse-engineering-tools-55223fad9193
+* 8: https://startup-house.com/glossary/disassembler
+* 9: https://cybersecuritynews.com/ida-9-0-released/
+* 10: https://www.linkedin.com/advice/3/what-advantages-disadvantages-using-ghidra
+* 11: https://www.deepbits.com/deepdi
+* 12: https://github.com/DeepBitsTechnology/DeepDi
+* 13: https://www.cs.ucr.edu/~heng/pubs/DeepDi.pdf
+* 14: https://blog.deepbitstech.com/2020/06/deepdisassembly-blazing-fast-and.html
