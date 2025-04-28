@@ -1,0 +1,34 @@
+{
+  "name": "cubical-script",
+  "displayName": "Cubical Script",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tpt2",
+        "aliases": [
+          "cubical script",
+          "tpt2"
+        ],
+        "extensions": [
+          ".tpt2"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tpt2",
+        "scopeName": "source.cubicalscript",
+        "path": "./syntaxes/tpt2.tmLanguage.json"
+      }
+    ]
+  }
+}

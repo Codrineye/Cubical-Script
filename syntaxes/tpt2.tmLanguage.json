@@ -1,0 +1,109 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Cubical Script",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#macroNames" },
+    { "include": "#macroParameters" },
+    { "include": "#macroCalls" },
+    { "include": "#dataTypes" },
+    { "include": "#metaActions" },
+    { "include": "#actions" }
+  ],
+  "repository": {
+    "comments":{
+      "patterns": [
+        {
+          "name": "comment.single_line.tpt2",
+          "match": ";\\s+.*$"
+        },
+        {
+          "name": "comment.block.tpt2",
+          "begin": ";/\\*",
+          "end": ".*\\*/;"
+        }
+      ]
+    },
+    "macroNames": {
+      "patterns": [
+        {
+          "name": "entity.name.macro.tpt2",
+          "match": "#[\\w|_]+(?=\\s|\\()"
+        }
+      ]
+    },
+    "macroParameters": {
+      "patterns": [
+        {
+          "name": "variable.parameter.macro.tpt2",
+          "match": "\\(([^)]+)\\)"
+        }
+      ]
+    },
+    "macroCalls": {
+      "patterns": [
+        {
+          "name": "variable.other.macro-call.tpt2",
+          "match": "\\{[\\w|_]+(\\([^)]*\\))?\\}"
+        }
+      ]
+    },
+    "dataTypes":{
+      "patterns": [
+        {
+          "name": "variable.data_types.tpt2",
+          "match": "(bool|double|int|string|vector)"
+        },
+        {
+          "name": "variable.data_types.bool.tpt2",
+          "match": "\\b(true|false)\\b"
+        },
+        {
+          "name": "variable.data_types.double.tpt2",
+          "match": "\\b\\d+\\.\\d*\\b"
+        },
+        {
+          "name": "variable.data_types.int.tpt2",
+          "match": "\\b\\d+\\b"
+        },
+        {
+          "name": "variable.data_types.string.tpt2",
+          "match": "\\b(\"|\\')([^\"\\\\]*(\\\\.[^\"\\\\]*)*)\\1\\b"
+        }
+      ]
+    },
+    "metaActions":{
+      "patterns": [
+        {
+          "name": "keyword.meta.import.tpt2",
+          "match": ":import\\s+\"([^\"]+)\""
+        },
+        {
+          "name": "keyword.meta.budget_cap.tpt2",
+          "match": ":budget_cap\\s+(max|\\d+)"
+        },
+        {
+          "name": "keyword.variable.constant.tpt2",
+          "match": ":const\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s+\\b((true|false)|(\\d+\\.\\d*)|(\\d+)|((\"|\\')([^\"]+)(\\'|\"))|(vec\\(\\d+\\.\\d*,\\s*\\d+\\.\\d*\\)))\\b"
+        },
+        {
+          "name": "keyword.variable.local.tpt2",
+          "match": ":local\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)"
+        },
+        {
+          "name": "keyword.variable.non_constant.tpt2",
+          "match": ":(local|global)\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)"
+        }
+      ]
+    },
+    "actions":{
+      "patterns": [
+        {
+          "name": "support.function.action.tpt2",
+          "match": "^[^#:{\\s][^\\n]*"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.cubicalscript"
+}
