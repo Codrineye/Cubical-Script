@@ -13,7 +13,6 @@ Here is what I hope to cover:
 
 - Syntax similar to that seen in the [external editor by d0sboots](https://github.com/d0sboots/perfect-tower)
 - Source export/import capabilities, using files and folders for organization.
-- Replace the {lua()} macro with the {compute()} macro. This replaces the lua interpreter with a c++ syntax that I find easier to work with.
 
 At this moment, the only thing this extension can do is syntax highlighting.
 

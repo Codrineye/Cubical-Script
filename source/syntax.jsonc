@@ -1,0 +1,429 @@
+{
+  "strings": {
+    "building": [
+      "arcade",
+      "constructionFirm",
+      "factory",
+      "headquarters",
+      "laboratory",
+      "mine",
+      "museum",
+      "powerplant",
+      "shipyard",
+      "statueofcubos",
+      "tradingpost",
+      "workshop"
+    ],
+    // all windows in the game
+    "window": [
+      "towertesting",
+      "tradingpost",
+      "powerplant",
+      "factory",
+      "laboratory",
+      "shipyard",
+      "workshop",
+      "arcade",
+      "museum",
+      "headquarters",
+      "constructionfirm",
+      "statueofcubos",
+      "mine"
+    ],
+
+    // all software in the game
+    "software": [
+      "software.autoskip",
+      "software.wavestreaming",
+      "software.wavesurge",
+      "software.criticalWavejump",
+      "software.wavemomentum",
+      "software.wavestorm",
+      "software.wavepersistence",
+      "software.waveinstability",
+      "software.wavevortex",
+      "software.wavecatalyst",
+      "software.waveendurance",
+      "software.newbounds",
+      "software.wavemarathon",
+      "software.wavecompression",
+      "software.erasurge",
+      "software.eraburst",
+      "software.eraswirl",
+      "software.wavehorizon",
+      "software.nobounds",
+      "software.eratunneling",
+      "software.wavebreach",
+      "software.wavefloor",
+      "software.erafloor",
+      "software.erahorizon",
+      "software.waverestart",
+      "software.infinityhorizon"
+    ],
+
+    // item list only needs to include uncraftable items not used to produce
+    "item": [
+      "plate.rubber",
+      "plate.rainbow",
+      "essence.void",
+      "circuit",
+      "wire",
+      "screw",
+      "pipe",
+      "ring",
+      "block.dense",
+      "plate.dense",
+      "plate.circuit",
+
+      // Halloween event exclusive
+      "pumpkin.plate",
+      "pumpkin.carved",
+      "pumpkin.anti"
+    ],
+
+    "craft": {
+      // list of all items obtained from crafting
+
+      "chip": [
+        "chip.basic",
+        "chip.advanced",
+        "chip.hitech",
+        "chip.nano",
+        "chip.quantum",
+        "chip"
+      ],
+      // chip is the root element
+      // chip t1 = basic, t2 = advanced, t3 = hi-tech, t4 = nano and t5 = quantium
+
+      "producer": [
+        "producer.town",
+        "producer.statueofcubos",
+        "producer.workshop",
+        "producer.shipyard",
+        "producer.laboratory",
+        "producer.constructionFirm",
+        "producer.mine",
+        "producer.powerplant",
+        "producer.arcade",
+        "producer.headquarters",
+        "producer.tradingpost",
+        "producer.museum",
+        "producer.factory",
+        "producer.exoticgems",
+        "producer.gems",
+
+        // Halloween event exclusive
+        "pumpkin.producer"
+      ],
+      "booster": [
+        "booster.acceleration",
+        "booster.machines",
+        "booster.production.regular",
+        "booster.resource.drops",
+        "booster.trees"
+      ],
+      "machine": [
+        "machine.oven",
+        "machine.assembler",
+        "machine.refinery",
+        "machine.crusher",
+        "machine.cutter",
+        "machine.presser",
+        "machine.mixer",
+        "machine.transportbelt",
+        "machine.shaper",
+        "machine.boiler"
+      ],
+      "sapling": ["sapling.rubber", "sapling.void"],
+      // Items that can't be categorised
+      "item": [
+        "hammer",
+        "dust.rainbow",
+        "cable.insulated",
+        "plate",
+        "motor",
+        "pump",
+        "block",
+        "plate.stack",
+        "lump",
+
+        // Halloween event exclusive
+        "pumpkin.stack"
+      ],
+
+      "all": [
+        "# chip #",
+        "# producer #",
+        "# booster #",
+        "# machine #",
+        "# sapling #",
+        "# item #"
+      ]
+    },
+
+    // Items obtained through usage of a machine
+    "produce": [
+      "rubber",
+      "dust.rainbow",
+      "ingot.rainbow",
+      "cable",
+      "ore",
+      "dust",
+      "ingot",
+      "plate",
+      "block",
+      "plate.stack",
+      "rod",
+      "lump",
+      "pumpkin",
+      "pumpkin.stack"
+    ],
+
+    "machine": [
+      "oven",
+      "assembler",
+      "refinery",
+      "crusher",
+      "cutter",
+      "presser",
+      "mixer",
+      "shaper",
+      "boiler"
+    ],
+
+    // museum powerstone tab
+    "inventory": ["inventory", "loadout", "combinator", "cuboscube"],
+    "elementMarket": [
+      "fire",
+      "water",
+      "earth",
+      "air",
+      "nature",
+      "light",
+      "darkness",
+      "electricity",
+      "universal"
+    ],
+    "elementAll": [
+      "fire",
+      "water",
+      "earth",
+      "air",
+      "nature",
+      "light",
+      "darkness",
+      "electricity",
+      "universal",
+      "neutral"
+    ],
+
+    "workerTask": {
+      "towertesting": [
+        "task.towertesting.upgrade",
+        "task.towertesting.upgradeEra"
+      ],
+      "trading_post": ["task.tradingpost.trading"],
+      "powerplant": [
+        "task.powerplant.replace",
+        "task.powerplant.restart",
+        "task.dyson.construct"
+      ],
+      "factory": [
+        "factory.oreManagement",
+        "factory.upTiering",
+        "factory.downTiering",
+        "factory.refiningManagement",
+        "factory.dissolveManagement",
+        "factory.treeHarvesting"
+      ],
+      "laboratory": [
+        "task.laboratory.prestige",
+        "task.laboratory.nature.water",
+        "task.laboratory.neutral.expand",
+        "task.laboratory.water.freeze",
+        "task.laboratory.darkness.search",
+        "task.laboratory.gems.spin",
+        "task.laboratory.gems.stack",
+        "task.laboratory.exotic.gift"
+      ],
+      "shipyard": ["shipyard.shipping"],
+      "workshop": [
+        "task.workshop.era.research",
+        "task.workshop.era.experiment",
+        "task.workshop.era.essence"
+      ],
+      "arcade": ["task.arcade.playLuckyWheel", "task.arcade.playJumble"],
+      "museum": ["task.museum.buycombine", "task.museum.buyoffshore"],
+      "headquarters": [],
+      "construction_firm": [
+        "task.construct",
+        "task.construct.gems",
+        "task.construct.exotics"
+      ],
+      "statueofcubos": [],
+      "mine": [
+        "task.mine.drill",
+        "task.mine",
+        "task.mine.asteroid",
+        "task.claim.asteroid",
+        "task.scan.asteroid"
+      ],
+
+      // list of all tasks. Used by default for recommendations.
+      "all": [
+        "# towertesting #",
+        "# tradingpost #",
+        "# powerplant #",
+        "# factory #",
+        "# laboratory #",
+        "# shipyard #",
+        "# workshop #",
+        "# arcade #",
+        "# museum #",
+        "# headquarters #",
+        "# constructionfirm #",
+        "# statueofcubos #",
+        "# mine #"
+      ]
+    },
+
+    "region": [
+      "forest",
+      "desert",
+      "winter",
+      "underground",
+      "volcano",
+      "highmountain",
+      "jungle",
+      "metallicruins",
+      "beach",
+      "ocean",
+      "neutral",
+      "darkrealm",
+      "heaven",
+      "universe",
+      "chaos"
+    ],
+    "difficulty": [
+      "easy",
+      "medium",
+      "hard",
+      "insane",
+      "nightmare",
+      "impossible"
+    ],
+
+    "eraDivider": ["damage", "health"],
+
+    "adventure": {
+      "marketItem": [
+        "eodArmor",
+        "thornsArmor",
+        "bootsPhasing",
+        "leechSword",
+        "impaler",
+        "manaReaver",
+        "hammer",
+        "holyBomb",
+        "bookSpells"
+      ],
+      "keyItem": [
+        "map",
+        "emeraldMap",
+        "compass",
+        "ultraKey",
+        "lantern",
+        "market",
+        "bag",
+        "masterSword",
+        "masterArmor",
+        "# marketItem #"
+      ],
+      "entityType": [
+        "Chest",
+        "Bomb",
+        "Rock",
+        "Door",
+        "Enemy",
+        "Elite",
+        "Mimic"
+      ],
+      "spell": ["identifyRoom", "manaArmor"]
+    },
+
+    "currency": [
+      "gameTokens",
+      "town.resources",
+      "gems",
+      "gems.exotic",
+      "powerplant.resources",
+      "mine.resources",
+      "factory.resources",
+      "headquarters.resources",
+      "arcade.resources",
+      "laboratory.resources",
+      "shipyard.resources",
+      "tradingpost.resources",
+      "workshop.resources",
+      "museum.resources",
+      "constructionFirm.resources",
+      "statueofcubos.resources",
+      "halloween.pumpkins",
+      "halloween.souls",
+      "halloween.blood",
+      "christmas.cookies",
+      "christmas.presents",
+      "christmas.reindeers.trained",
+      "christmas.reindeers.milk",
+      "christmas.reindeers.raw",
+      "christmas.milk",
+      "christmas.trees",
+      "christmas.wrappings",
+      "christmas.toys",
+      "christmas.candy",
+      "time.offline"
+    ]
+  },
+  "impulse": [
+    "wakeup()",
+    "game.newround()",
+    "key.[a-z0-9]()",
+    "mouse.[0-2].# state #() {state: (up|down)}",
+    "(open|close).# strings{building} #.()"
+  ],
+  "actions": {
+    "bool": [
+      "comparison.# data_type #(# data_type #, op_comp, # data_type #) {data_type: (bool|double|int|string)}",
+      "c.# data_type #(type: left, op_comp, type: right) {data_type: (b|d|i|s)}",
+
+      "not(bool: negate)",
+
+      "mouse.[0-2].state()",
+      "window.visibility.get(string: windowID)",
+      "visibility.get(s)",
+      "window.child.visibility.get(string: windowID, string: elementID)",
+      "child.visibility.get(s, s)",
+      "tower\\.stunned\\(\\)",
+      "game\\.(isBossFight|isTowerTesting)\\(\\)",
+      "software\\.enabled\\(string: name# strings{software} #\\)",
+      "worker\\.paused\\(string: name\\)"
+    ],
+    "double": [
+
+    ],
+    "int": [
+
+    ],
+    "string": [
+
+    ],
+    "vector": [
+
+    ],
+    "void": [
+
+    ]
+  },
+  // Everything that's in actions{bool} can be attributed as a condition
+  "conditions": ["# actions{bool} #"]
+}

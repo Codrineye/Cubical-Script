@@ -68,7 +68,11 @@
         },
         {
           "name": "variable.data_types.string.tpt2",
-          "match": "\\b(\"|\\')([^\"\\\\]*(\\\\.[^\"\\\\]*)*)\\1\\b"
+          "match": "\\b(\"[^\"]*\"|\\'[^\\']*\\')\\b"
+        },
+        {
+          "name": "variable.data_types.vector.tpt2",
+          "match": "vec\\(\\s*\\d+\\.\\d*,\\s*\\d+\\.\\d*\\s*\\)"
         }
       ]
     },
@@ -83,16 +87,20 @@
           "match": ":budget_cap\\s+(max|\\d+)"
         },
         {
-          "name": "keyword.variable.constant.tpt2",
-          "match": ":const\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s+\\b((true|false)|(\\d+\\.\\d*)|(\\d+)|((\"|\\')([^\"]+)(\\'|\"))|(vec\\(\\d+\\.\\d*,\\s*\\d+\\.\\d*\\)))\\b"
+          "name": "keyword.variable.constant.numbers.tpt2",
+          "match": ":const\\s+(bool|double|int)\\s+\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s+((true|false)|(\\d+\\.\\d*)|(\\d+))\\b"
         },
         {
-          "name": "keyword.variable.local.tpt2",
-          "match": ":local\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)"
+          "name": "keyword.variable.constant.string.tpt2",
+          "match": ":const\\s+string\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s+(\"[^\"]*\"|\\'[^\\']*\\')"
         },
         {
-          "name": "keyword.variable.non_constant.tpt2",
-          "match": ":(local|global)\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)"
+          "name": "keyword.variable.constant.vector.tpt2",
+          "match": ":const\\s+vector\\s+([[a-zA-Z_][a-zA-Z0-9_]*])\\s+vec\\(\\s*\\d+\\.\\d*\\s*,\\s*\\d+\\.\\d*\\s*\\)"
+        },
+        {
+          "name": "keyword.variable.non-constant.tpt2",
+          "match": ":(global|local)\\s+(bool|double|int|string|vector)\\s+([a-zA-Z_][a-zA-Z0-9_]*)"
         }
       ]
     },

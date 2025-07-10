@@ -12,6 +12,10 @@ Jump to the versioning stage of the project.
 
 - [0.00.1](#version-0001)
 
+#### version 0.00.2
+
+Remove the idea of changing the {lua} macro with {compute}.
+
 #### version 0.00.1
 
 First push to create the repo.<br>

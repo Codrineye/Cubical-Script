@@ -30,5 +30,8 @@
         "path": "./syntaxes/tpt2.tmLanguage.json"
       }
     ]
+  },
+  "dependencies": {
+    "jsonc-parser": "^3.3.1"
   }
 }
